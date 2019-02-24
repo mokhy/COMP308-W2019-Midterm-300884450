@@ -28,6 +28,7 @@
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
 
+                  <!--An edit and delete button. Edit takes the user to the books details page to edit and delete removes a book by id -->
                   <td class="text-center">
                   <a href="/books/<%= books[count]._id %>" class="btn btn-warning"><i class="fa fa-pencil"></i> Edit Book</a>
                   </td>
@@ -48,5 +49,3 @@
     </div>
 
 <% include ../partials/footer.ejs %>
-
-
